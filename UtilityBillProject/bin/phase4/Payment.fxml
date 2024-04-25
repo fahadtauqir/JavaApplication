@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phase4.PaymentController">
+   <children>
+      <ImageView fitHeight="561.0" fitWidth="639.0" layoutX="-16.0" layoutY="-52.0" opacity="0.37">
+         <image>
+            <Image url="@Background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backToHome" layoutX="495.0" layoutY="339.0" mnemonicParsing="false" onAction="#BackToHomeButtonListener" text="Back" />
+      <Label layoutX="195.0" layoutY="26.0" text="Payment System">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="124.0" text="Meter No." />
+      <Label layoutX="50.0" layoutY="186.0" text="Ending on" />
+      <Button fx:id="makePayment" layoutX="219.0" layoutY="339.0" mnemonicParsing="false" onAction="#MakePaymentbuttonlistener" text="Make Payment" />
+      <Label layoutX="51.0" layoutY="253.0" text="Amount Due:" />
+      <ComboBox fx:id="meterNo" layoutX="195.0" layoutY="119.0" prefWidth="150.0" />
+      <ComboBox fx:id="amountDue" layoutX="195.0" layoutY="248.0" prefWidth="150.0" />
+      <ComboBox fx:id="endDate" layoutX="195.0" layoutY="185.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

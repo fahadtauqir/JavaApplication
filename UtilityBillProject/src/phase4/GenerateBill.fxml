@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phase4.GenerateBillController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="705.0" layoutY="-104.0" opacity="0.36">
+         <image>
+            <Image url="@Background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backToHome" layoutX="600.0" layoutY="354.0" mnemonicParsing="false" onAction="#BackToHomeButtonListener" text="Back" />
+      <Label layoutX="255.0" layoutY="14.0" text="Bill Generation">
+         <font>
+            <Font size="29.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="115.0" text="Meter No." />
+      <Button fx:id="generateBill" layoutX="297.0" layoutY="354.0" mnemonicParsing="false" onAction="#generateButtonListener" text="Generate Bill" />
+      <Label layoutX="29.0" layoutY="223.0" prefHeight="31.0" prefWidth="134.0" text="Number of Units" AnchorPane.bottomAnchor="346.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="437.0" AnchorPane.topAnchor="223.0" />
+      <TextField fx:id="numberOfUnits" layoutX="142.0" layoutY="306.0" prefHeight="31.0" prefWidth="150.0" />
+      <TextField fx:id="tariff" layoutX="143.0" layoutY="174.0" prefHeight="31.0" prefWidth="150.0" />
+      <Label layoutX="23.0" layoutY="311.0" text="Units Consumed" />
+      <Label layoutX="413.0" layoutY="177.0" text="Start Date" />
+      <Label layoutX="416.0" layoutY="246.0" text="End Date" />
+      <DatePicker fx:id="startDate" layoutX="511.0" layoutY="172.0" prefHeight="31.0" prefWidth="156.0" />
+      <DatePicker fx:id="endDate" layoutX="511.0" layoutY="241.0" prefHeight="31.0" prefWidth="156.0" />
+      <ComboBox fx:id="meterNo" layoutX="142.0" layoutY="110.0" prefWidth="150.0" />
+      <ComboBox fx:id="meterType" layoutX="511.0" layoutY="108.0" prefWidth="150.0" />
+      <Label layoutX="408.0" layoutY="113.0" text="Meter Type" />
+      <Label layoutX="23.0" layoutY="179.0" text="Tariff" />
+      <TextField fx:id="standingCharges" layoutX="143.0" layoutY="241.0" prefHeight="31.0" prefWidth="150.0" />
+      <Label layoutX="23.0" layoutY="246.0" text="Standing Charges" />
+      <Label layoutX="306.0" layoutY="246.0" prefHeight="21.0" prefWidth="61.0" text="GBP/day">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="306.0" layoutY="185.0" prefHeight="21.0" prefWidth="61.0" text="GBP/unit">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
